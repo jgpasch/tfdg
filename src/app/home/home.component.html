@@ -1,0 +1,18 @@
+<md-card id="league-standings">
+  <md-card-header  class="title-wrapper">
+    <md-card-title>
+      <h2>League Standings</h2>
+      <hr>
+    </md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <md-list>
+      <md-list-item *ngFor="let team of teams; let i = index">
+        <div class="standings-row">
+          <i class="material-icons">filter_{{i+1}}</i>
+          <h4 class="team-name">{{team.$key}}</h4>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+</md-card>

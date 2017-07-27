@@ -14,7 +14,6 @@ const initialState: TeamState = {
 export function teamsReducer( state = initialState, action: teamActions.TeamActions ): TeamState {
    switch (action.type) {
      case teamActions.FETCH_TEAMS:
-       console.log(state);
        return {
          ...state
         }
