@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+// Material imports
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MdButtonModule } from '@angular/material';
 // firebase imports
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -22,6 +26,8 @@ import { FirebaseService } from './shared/services/firebase.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MdButtonModule,
     AngularFireModule.initializeApp(config.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
