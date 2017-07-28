@@ -6,16 +6,124 @@
     flex-direction: row;
     justify-content: center;
     background-color: #00BCD3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    h2 {
+      color: white;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      font-weight: 500;
+    }
+  }
+
+  .list-item {
+    width: 100%;
+    height: 110px;
+    margin: 10px 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 4px solid #5171C3;
+
+    .mat-list-item-content {
+      width: 100%;
+    }
+
+    .info-team-score {
+      text-shadow: 1px 1px rgba(51, 78, 148, 0.7), 2px 2px rgba(53, 81, 152, 0.715), 3px 3px rgba(56, 83, 156, 0.73), 4px 4px rgba(58, 86, 159, 0.745), 5px 5px rgba(60, 89, 162, 0.76), 6px 6px rgba(62, 91, 165, 0.775), 7px 7px rgba(64, 93, 168, 0.79), 8px 8px rgba(66, 95, 171, 0.805), 9px 9px rgba(67, 97, 174, 0.82), 10px 10px rgba(69, 99, 176, 0.835), 11px 11px rgba(70, 100, 178, 0.85), 12px 12px rgba(71, 102, 180, 0.865), 13px 13px rgba(73, 103, 182, 0.88), 14px 14px rgba(74, 105, 184, 0.895), 15px 15px rgba(75, 106, 186, 0.91), 16px 16px rgba(76, 107, 187, 0.925), 17px 17px rgba(77, 108, 189, 0.94), 18px 18px rgba(78, 109, 190, 0.955), 19px 19px rgba(79, 111, 192, 0.97), 20px 20px rgba(80, 112, 193, 0.985);
+    }
+
+    &:nth-child(2), {
+      border-top: 4px solid #2EA83B;
+
+      .info-team-score {
+        background-color: #2EA83B;
+        text-shadow: 1px 1px rgba(30, 108, 38, 0.7), 2px 2px rgba(31, 113, 39, 0.715), 3px 3px rgba(32, 118, 41, 0.73), 4px 4px rgba(33, 122, 43, 0.745), 5px 5px rgba(35, 127, 44, 0.76), 6px 6px rgba(36, 130, 46, 0.775), 7px 7px rgba(37, 134, 47, 0.79), 8px 8px rgba(38, 138, 48, 0.805), 9px 9px rgba(38, 141, 49, 0.82), 10px 10px rgba(39, 144, 50, 0.835), 11px 11px rgba(40, 147, 51, 0.85), 12px 12px rgba(41, 149, 52, 0.865), 13px 13px rgba(41, 152, 53, 0.88), 14px 14px rgba(42, 154, 54, 0.895), 15px 15px rgba(43, 156, 55, 0.91), 16px 16px rgba(43, 158, 55, 0.925), 17px 17px rgba(44, 160, 56, 0.94), 18px 18px rgba(44, 162, 57, 0.955), 19px 19px rgba(45, 164, 57, 0.97), 20px 20px rgba(45, 166, 58, 0.985);
+      }
+    }
+
+    &:nth-child(3) {
+      border-top: 4px solid #BDB235;
+
+      .info-team-score {
+        background-color: #BDB235;
+        text-shadow: 1px 1px rgba(129, 122, 36, 0.7), 2px 2px rgba(134, 126, 37, 0.715), 3px 3px rgba(139, 131, 38, 0.73), 4px 4px rgba(143, 135, 40, 0.745), 5px 5px rgba(148, 139, 41, 0.76), 6px 6px rgba(151, 143, 42, 0.775), 7px 7px rgba(155, 146, 43, 0.79), 8px 8px rgba(159, 150, 44, 0.805), 9px 9px rgba(162, 152, 45, 0.82), 10px 10px rgba(165, 155, 46, 0.835), 11px 11px rgba(168, 158, 47, 0.85), 12px 12px rgba(170, 160, 47, 0.865), 13px 13px rgba(173, 163, 48, 0.88), 14px 14px rgba(175, 165, 49, 0.895), 15px 15px rgba(177, 167, 49, 0.91), 16px 16px rgba(179, 169, 50, 0.925), 17px 17px rgba(181, 171, 50, 0.94), 18px 18px rgba(183, 173, 51, 0.955), 19px 19px rgba(185, 174, 52, 0.97), 20px 20px rgba(187, 176, 52, 0.985);
+      }
+    }
+
+    &:nth-child(4) {
+      border-top: 4px solid #DE660F;
+
+      .info-team-score {
+        background-color: #DE660F;
+        text-shadow: 1px 1px rgba(150, 69, 10, 0.7), 2px 2px rgba(156, 71, 10, 0.715), 3px 3px rgba(162, 74, 10, 0.73), 4px 4px rgba(167, 77, 11, 0.745), 5px 5px rgba(172, 79, 11, 0.76), 6px 6px rgba(177, 81, 11, 0.775), 7px 7px rgba(181, 83, 12, 0.79), 8px 8px rgba(186, 85, 12, 0.805), 9px 9px rgba(189, 87, 12, 0.82), 10px 10px rgba(193, 88, 13, 0.835), 11px 11px rgba(196, 90, 13, 0.85), 12px 12px rgba(199, 91, 13, 0.865), 13px 13px rgba(202, 93, 13, 0.88), 14px 14px rgba(205, 94, 13, 0.895), 15px 15px rgba(208, 95, 14, 0.91), 16px 16px rgba(211, 96, 14, 0.925), 17px 17px rgba(213, 98, 14, 0.94), 18px 18px rgba(215, 99, 14, 0.955), 19px 19px rgba(217, 100, 14, 0.97), 20px 20px rgba(220, 101, 14, 0.985);
+      }
+    }
+
+    &:nth-child(6) {
+      border-top: 4px solid #2EA83B;
+
+      .info-team-score {
+        background-color: #2EA83B;
+        text-shadow: 1px 1px rgba(30, 108, 38, 0.7), 2px 2px rgba(31, 113, 39, 0.715), 3px 3px rgba(32, 118, 41, 0.73), 4px 4px rgba(33, 122, 43, 0.745), 5px 5px rgba(35, 127, 44, 0.76), 6px 6px rgba(36, 130, 46, 0.775), 7px 7px rgba(37, 134, 47, 0.79), 8px 8px rgba(38, 138, 48, 0.805), 9px 9px rgba(38, 141, 49, 0.82), 10px 10px rgba(39, 144, 50, 0.835), 11px 11px rgba(40, 147, 51, 0.85), 12px 12px rgba(41, 149, 52, 0.865), 13px 13px rgba(41, 152, 53, 0.88), 14px 14px rgba(42, 154, 54, 0.895), 15px 15px rgba(43, 156, 55, 0.91), 16px 16px rgba(43, 158, 55, 0.925), 17px 17px rgba(44, 160, 56, 0.94), 18px 18px rgba(44, 162, 57, 0.955), 19px 19px rgba(45, 164, 57, 0.97), 20px 20px rgba(45, 166, 58, 0.985);
+      }
+    }
+
+    &:nth-child(7) {
+      border-top: 4px solid #BDB235;
+
+      .info-team-score {
+        background-color: #BDB235;
+        text-shadow: 1px 1px rgba(129, 122, 36, 0.7), 2px 2px rgba(134, 126, 37, 0.715), 3px 3px rgba(139, 131, 38, 0.73), 4px 4px rgba(143, 135, 40, 0.745), 5px 5px rgba(148, 139, 41, 0.76), 6px 6px rgba(151, 143, 42, 0.775), 7px 7px rgba(155, 146, 43, 0.79), 8px 8px rgba(159, 150, 44, 0.805), 9px 9px rgba(162, 152, 45, 0.82), 10px 10px rgba(165, 155, 46, 0.835), 11px 11px rgba(168, 158, 47, 0.85), 12px 12px rgba(170, 160, 47, 0.865), 13px 13px rgba(173, 163, 48, 0.88), 14px 14px rgba(175, 165, 49, 0.895), 15px 15px rgba(177, 167, 49, 0.91), 16px 16px rgba(179, 169, 50, 0.925), 17px 17px rgba(181, 171, 50, 0.94), 18px 18px rgba(183, 173, 51, 0.955), 19px 19px rgba(185, 174, 52, 0.97), 20px 20px rgba(187, 176, 52, 0.985);
+      }
+    }
+
+    &:nth-child(7) {
+      border-top: 4px solid #DE660F;
+
+      .info-team-score {
+        background-color: #DE660F;
+        text-shadow: 1px 1px rgba(150, 69, 10, 0.7), 2px 2px rgba(156, 71, 10, 0.715), 3px 3px rgba(162, 74, 10, 0.73), 4px 4px rgba(167, 77, 11, 0.745), 5px 5px rgba(172, 79, 11, 0.76), 6px 6px rgba(177, 81, 11, 0.775), 7px 7px rgba(181, 83, 12, 0.79), 8px 8px rgba(186, 85, 12, 0.805), 9px 9px rgba(189, 87, 12, 0.82), 10px 10px rgba(193, 88, 13, 0.835), 11px 11px rgba(196, 90, 13, 0.85), 12px 12px rgba(199, 91, 13, 0.865), 13px 13px rgba(202, 93, 13, 0.88), 14px 14px rgba(205, 94, 13, 0.895), 15px 15px rgba(208, 95, 14, 0.91), 16px 16px rgba(211, 96, 14, 0.925), 17px 17px rgba(213, 98, 14, 0.94), 18px 18px rgba(215, 99, 14, 0.955), 19px 19px rgba(217, 100, 14, 0.97), 20px 20px rgba(220, 101, 14, 0.985);
+      }
+    }
   }
 
   .standings-row {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    width: 100%;
+
+    .info-team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-score {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 26px;
+        color: white;
+        background-color: #5171C3;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+    }
+
+    .info-place {
+      font-size: 24px;
+      margin-left: auto;
+    }
 
     .team-name {
       display: inline-block;
-      padding-left: 5px;
+      font-size: 20px;
+      margin-bottom: 0px;
     }
   }
 

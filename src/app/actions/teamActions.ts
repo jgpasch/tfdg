@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Action, Store } from '@ngrx/store';
+import { Action } from '@ngrx/store';
 
 export const FETCH_TEAMS = 'Fetch TEAMS';
 export const FETCH_TEAMS_SUCCESS = 'Fetch TEAMS Success';
