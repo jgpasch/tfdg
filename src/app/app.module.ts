@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routes';
+import 'hammerjs';
 
 // Material imports
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';

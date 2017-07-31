@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -9,12 +10,10 @@ import { Store } from '@ngrx/store';
 export class AppComponent {
   loading = false;
 
-  constructor(private store: Store<any>) {
+  constructor(private store: Store<any>, private router: Router) {
     this.store.select(state => state._loading.loading).subscribe(loading => {
-      // console.log('triggered loading chanfe', state['_loading'].loading);
       console.log(loading);
       this.loading = loading;
     });
   }
-
 }
