@@ -53,9 +53,11 @@ export class HomeComponent {
 
   sort(items: any[]): void {
     items.sort((a: any, b: any) => {
-      if (a.lp > b.lp) {
+      const alp = parseInt(a.lp, 10);
+      const blp = parseInt(b.lp, 10);
+      if (alp > blp) {
         return -1;
-      } else if (a.lp < b.lp) {
+      } else if (alp < blp) {
         return 1;
       } else {
         return 0;
