@@ -1,10 +1,10 @@
 export default {
   firebase: {
-    apiKey: 'AIzaSyCM8jT0M9AblZ8viIXDqVcUJ26fYRxm_Ds',
-    authDomain: 'tfdg-399b9.firebaseapp.com',
-    databaseURL: 'https://tfdg-399b9.firebaseio.com',
-    projectId: 'tfdg-399b9',
-    storageBucket: 'tfdg-399b9.appspot.com',
-    messagingSenderId: '614383390692'
+    apiKey: 'AIzaSyCCBkQq8I6WZdQvBERvlhAFUEhcCnqG8lk',
+    authDomain: 'tfdg-175615.firebaseapp.com',
+    databaseURL: 'https://tfdg-175615.firebaseio.com',
+    projectId: 'tfdg-175615',
+    storageBucket: 'tfdg-175615.appspot.com',
+    messagingSenderId: '685000305092'
   }
 };

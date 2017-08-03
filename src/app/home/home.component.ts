@@ -38,7 +38,7 @@ export class HomeComponent {
     this.store.dispatch({ type: homepageActions.FETCH_HOMEPAGE_DATA_SUCCESS });
   }
 
-  sup(i) {
+  sup(i: number) {
     switch (i) {
       case 1:
         return 'st';
@@ -51,8 +51,8 @@ export class HomeComponent {
     }
   }
 
-  sort(items): void {
-    items.sort((a, b) => {
+  sort(items: any[]): void {
+    items.sort((a: any, b: any) => {
       if (a.lp > b.lp) {
         return -1;
       } else if (a.lp < b.lp) {
