@@ -4,7 +4,6 @@
       <h2>League Standings</h2>
     </md-card-title>
   </md-card-header>
-  <p>These numbers will be real time by the end of the day today.</p>
   <md-card-content>
     <md-list *ngIf="teams.length > 0">
        <md-list-item *ngFor="let team of teams; let i = index" [attr.data-key]="i" class="list-item">
