@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
@@ -18,20 +19,28 @@ import { FirebaseService } from './../shared/services/firebase.service';
 export class HomeComponent {
   teams: any[];
 
-  constructor(private db: AngularFireDatabase, private firebaseService: FirebaseService, private store: Store<any>) {
+  constructor(
+    private db: AngularFireDatabase,
+    private firebaseService: FirebaseService,
+    private store: Store<any>,
+    private router: Router
+  ) {
     this.store.select(state => state).subscribe(state => {
       const temp = state['_homepage']['teams'];
       // const temp = state.teams;
       this.sort(temp);
       this.teams = temp;
-      console.log(this.teams);
-      console.log('being called');
       if (this.teams.length > 0 && state._loading.loading) {
         this.store.dispatch(new loadingActions.LoadingSuccess());
       }
     });
     this.store.dispatch(new loadingActions.Loading());
     this.store.dispatch(new homepageActions.FetchHomepageData());
+  }
+
+  teamTapped(teamName) {
+    this.store.dispatch({ type: homepageActions.TEAM_TAPPED, payload: teamName})
+    this.router.navigate([`/team/${teamName}`])
   }
 
   getTeams() {

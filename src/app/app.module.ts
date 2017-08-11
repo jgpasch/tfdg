@@ -32,6 +32,7 @@ import { AppComponent } from './app.component';
 import { FirebaseService } from './shared/services/firebase.service';
 import { HomeComponent } from './home/home.component';
 import { SpinnerComponent } from './shared/components/spinner/spinner.component';
+import { TeamDetailComponent } from './home/team-detail/team-detail.component';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCCBkQq8I6WZdQvBERvlhAFUEhcCnqG8lk',
@@ -46,7 +47,8 @@ const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    TeamDetailComponent
   ],
   imports: [
     routing,
